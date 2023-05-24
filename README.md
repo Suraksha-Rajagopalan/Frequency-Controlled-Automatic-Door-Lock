@@ -65,7 +65,7 @@ G ≡ vO/vI = (−R2/R1) / 1+(1+R2/R1)/A
 <img src = "https://user-images.githubusercontent.com/91787553/227759153-4204a1e8-77df-47b7-8913-efed64fe2729.png" width = 400>
 
 <h3> Weighted Summer </h3>
-resistance Rf in the negative-feedback path (as before), but we have a number of input signals v1,v2,...,vn each applied to a corresponding resistor R1,R2,...,Rn, which are connected to the inverting terminal of the op amp. 
+The resistance Rf in the negative-feedback path (as before), but we have a number of input signals v1,v2,...,vn each applied to a corresponding resistor R1,R2,...,Rn, which are connected to the inverting terminal of the op amp. 
 
 <img src = "https://user-images.githubusercontent.com/91787553/227816861-fd29985a-ee2f-4a2e-8048-0d9fbf1ceaec.png" width = 400>
 
@@ -75,3 +75,25 @@ be independently adjusted by adjusting the corresponding “feed-in” resistor 
 <img src = "https://user-images.githubusercontent.com/91787553/227817033-9429e2b5-8e08-465d-97ec-4d46dae17a10.png" width = 400>
 
 Hence the weighted summer is capable of implementing the summing coefficients of both the signs
+
+<h3> Differential Amplifier </h3>
+
+The differential amplifier is a voltage subtractor circuit which produces an output voltage proportional to the voltage difference of two input signals applied to the inputs of the inverting and non-inverting terminals of an operational amplifier.
+
+Thus far we have used only one of the operational amplifiers inputs to connect to the amplifier, using either the “inverting” or the “non-inverting” input terminal to amplify a single input signal with the other input being connected to ground.
+
+But as a standard operational amplifier has two inputs, inverting and no-inverting, we can also connect signals to both of these inputs at the same time producing another common type of operational amplifier circuit called a Differential Amplifier.
+Then differential amplifiers amplify the difference between two voltages making this type of operational amplifier circuit a Subtractor unlike a summing amplifier which adds or sums together the input voltages. 
+
+<img src = "https://github.com/Suraksha-Rajagopalan/Op-Amp/assets/91787553/aead1ba2-8fe0-477b-876b-75407e887752" width = 400>
+
+<h3> Instrumentational Amplifier </h3>
+
+<img src = "https://github.com/Suraksha-Rajagopalan/Op-Amp/assets/91787553/8105492b-8769-46fa-99ae-b70c8ef0d4fe" width = 500>
+
+In-amp just provides the difference between two voltage sources with a gain that can be set by an external resistor.
+
+<h3> Integrator Circuit</h3>
+An integrator circuit is a type of inverting amplifier where the feedback resistor is replaced with a capacitor of suitable value. It is designed to produce a triangular wave output from a square wave input. Integrator circuits can be configured to perform calculus operations such as differentiation and integration. A passive integrator does not use any active devices like op-amps or transistors but only passives like resistors and capacitors. An active integrator provides a much lower output resistance and higher output voltage than it is possible with a simple RC circuit. The construction of a simple integrator circuit using op-amp requires two passive components, a resistor and a capacitor, which form a first-order low pass filter across the active component Op-Amp.
+
+<img src = "https://github.com/Suraksha-Rajagopalan/Op-Amp/assets/91787553/8105492b-8769-46fa-99ae-b70c8ef0d4fe" width = 500>
